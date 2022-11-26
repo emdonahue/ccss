@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="ccss.css">
+  <style>
+    .testcase { display: inline-block; margin: 30px; border: 2px solid black; height: 200px; width: 200px; }
+    .r > *, .c > * > *, .border { border: 2px solid red; }
+    a { background-color: yellow }
+  </style>
+</head>
+
+<!--lorem ipsum dolor sit amet-->
+<body>
+  <div class="testcase">
+    <div class="r">
+      <div>lorem</div>
+      <div>ipsum</div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="r mc">
+      <div>lorem</div>
+      <div>ipsum</div>
+    </div>
+  </div>
+  
+  <div class="testcase">
+    <div class="r w">
+      <div>lorem</div>
+      <div>ipsum</div>
+    </div>
+  </div>
+  
+  <div class="testcase">
+    <div class="r w h">
+      <div>lorem</div>
+      <div>ipsum</div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="r w h tc tm">
+      <div>lorem</div>
+      <div>ipsum dolor</div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="r w h tc tm lf">
+      <div>lorem</div>
+      <div>ipsum dolor</div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="r w h tc tm lf">
+      <a href="#">lorem</a>
+      <a href="#">ipsum</a>
+    </div>
+  </div>
+  
+  <div class="testcase">
+    <div class="r w h tc tm lf" style="border-collapse: collapse">
+      <div>lorem</div>
+      <div>ipsum</div>
+      <div>dolor</div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="r w h tc tm lf" style="border-collapse: collapse;">
+      <div style="border-right: 5px solid transparent">
+	<div class="r w h">
+	  <div style="border: 0px; border-right: 2px solid red">lorem</div>
+	</div>
+      </div>
+      <div style="border-right: 5px solid transparent">
+	<div class="r w h">
+	  <div style="border: 0px; border-right: 2px solid red; border-left: 2px solid red">ipsum</div>
+	</div>
+      </div>
+      <div>
+	<div class="r w h">
+	  <div style="border: 0px; border-right: 2px solid red; border-left: 2px solid red">dolor</div>
+	</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="testcase">
+    <div class="c w h tc tm lf">
+      <div>
+	<div>lorem</div>
+	<div>ipsum</div>
+      </div>
+      <div>
+	<div>dolor</div>
+	<div>sit</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="c w h tc tm lf" style="white-space: nowrap; overflow: hidden">
+      <div>
+	<div>lorem</div>
+	<div>ipsum</div>
+      </div>
+      <div>
+	<div>dolor</div>
+	<div>sit amet consectetur</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="c w h tc tm lf" style="border-spacing: 5px">
+      <div>
+	<div>lorem</div>
+	<div>ipsum</div>
+      </div>
+      <div>
+	<div>dolor</div>
+	<div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="c w h tc tm lf" style="border-spacing: 5px; empty-cells: hide">
+      <div>
+	<div></div>
+	<div>lorem</div>
+      </div>
+      <div>
+	<div>ipsum</div>
+      </div>
+    </div>
+  </div>
+
+</body>

@@ -1,0 +1,36 @@
+/* Column */
+.c { display: table;
+     vertical-align: inherit; /* Subtables should maintain alignment intent */
+     min-height: 1px; /* Height must be explicitly set for children to inherit it */ }
+.c > * { display: table-row;
+	 vertical-align: inherit; }
+.c > * > * { display: table-cell;
+	     vertical-align: inherit; }
+
+/* Row */
+.r { display: table;
+     min-height: 1px;
+     vertical-align: inherit; } 
+.r > *{ display: table-cell;
+	vertical-align: inherit; }
+
+/* Table Layout */
+.lf { table-layout: fixed }
+.lc { border-collapse: collapsed }
+
+/* Margins */
+.mc { margin-left: auto;
+      margin-right: auto; }
+.mr { margin-left: auto }
+
+/* Size */
+.w { width: 100% }
+.h { height: 100% }
+
+/* Text */
+.tt { vertical-align: top }
+.tm { vertical-align: middle }
+.tb { vertical-align: bottom }
+.tl { text-align: left }
+.tc { text-align: center }
+.tr { text-align: right }
