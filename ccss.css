@@ -17,6 +17,7 @@
 /* Table Layout */
 .lf { table-layout: fixed }
 .lc { border-collapse: collapsed }
+.lj > * + *{ padding-left: var(--justify-padding, 20px) }
 
 /* Margins */
 .mc { margin-left: auto;
