@@ -3,8 +3,7 @@
   <link rel="stylesheet" href="ccss.css">
   <style>
     .testcase { display: inline-block; margin: 30px; border: 2px solid black; height: 200px; width: 200px; }
-    .r > *, .c > * > *, .border { border: 2px solid red; }
-    a { background-color: yellow }
+    cell, a { border: 2px solid red; }
   </style>
 </head>
 
@@ -12,42 +11,42 @@
 <body>
   <div class="testcase">
     <div class="r">
-      <div>lorem</div>
-      <div>ipsum</div>
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
     </div>
   </div>
 
   <div class="testcase">
     <div class="r mc">
-      <div>lorem</div>
-      <div>ipsum</div>
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
     </div>
   </div>
   
   <div class="testcase">
     <div class="r w">
-      <div>lorem</div>
-      <div>ipsum</div>
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
     </div>
   </div>
   
   <div class="testcase">
     <div class="r w h">
-      <div>lorem</div>
-      <div>ipsum</div>
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
     </div>
   </div>
 
   <div class="testcase">
     <div class="r w h tc tm">
-      <div>lorem</div>
+      <cell>lorem</cell>
       <div>ipsum dolor</div>
     </div>
   </div>
 
   <div class="testcase">
     <div class="r w h tc tm lf">
-      <div>lorem</div>
+      <cell>lorem</cell>
       <div>ipsum dolor</div>
     </div>
   </div>
@@ -61,49 +60,37 @@
   
   <div class="testcase">
     <div class="r w h tc tm lf" style="border-collapse: collapse">
-      <div>lorem</div>
-      <div>ipsum</div>
-      <div>dolor</div>
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
+      <cell>dolor</cell>
     </div>
   </div>
 
   <div class="testcase">
-    <div class="r tc tm lj" style="--justify-padding: 26px">
-      <div>lorem</div>
-      <div>ipsum</div>
-      <div>dolor</div>
+    <div class="r tc tm lj" style="--justify-padding: 25px">
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
+      <cell>dolor</cell>
     </div>
   </div>
 
   <div class="testcase">
-    <div class="r w h tc tm lf" style="border-collapse: collapse;">
-      <div style="border-right: 5px solid transparent">
-	<div class="r w h">
-	  <div style="border: 0px; border-right: 2px solid red">lorem</div>
-	</div>
-      </div>
-      <div style="border-right: 5px solid transparent">
-	<div class="r w h">
-	  <div style="border: 0px; border-right: 2px solid red; border-left: 2px solid red">ipsum</div>
-	</div>
-      </div>
-      <div>
-	<div class="r w h">
-	  <div style="border: 0px; border-right: 2px solid red; border-left: 2px solid red">dolor</div>
-	</div>
-      </div>
+    <div class="r tc tm lj2" style="--justify-padding: 25px">
+      <cell>lorem</cell>
+      <cell>ipsum</cell>
+      <cell>dolor</cell>
     </div>
   </div>
   
   <div class="testcase">
     <div class="c w h tc tm lf">
       <div>
-	<div>lorem</div>
-	<div>ipsum</div>
+	<cell>lorem</cell>
+	<cell>ipsum</cell>
       </div>
       <div>
-	<div>dolor</div>
-	<div>sit</div>
+	<cell>dolor</cell>
+	<cell>sit</cell>
       </div>
     </div>
   </div>
@@ -111,12 +98,12 @@
   <div class="testcase">
     <div class="c w h tc tm lf" style="white-space: nowrap; overflow: hidden">
       <div>
-	<div>lorem</div>
-	<div>ipsum</div>
+	<cell>lorem</cell>
+	<cell>ipsum</cell>
       </div>
       <div>
-	<div>dolor</div>
-	<div>sit amet consectetur</div>
+	<cell>dolor</cell>
+	<cell>sit amet consectetur</cell>
       </div>
     </div>
   </div>
@@ -124,12 +111,41 @@
   <div class="testcase">
     <div class="c w h tc tm lf" style="border-spacing: 5px">
       <div>
-	<div>lorem</div>
-	<div>ipsum</div>
+	<cell>lorem</cell>
+	<cell>ipsum</cell>
       </div>
       <div>
-	<div>dolor</div>
+	<cell>dolor</cell>
 	<div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testcase">
+    <div class="c w h tc tm lf lsr lsc">
+      <div>
+	<div>
+	  <div class="r w h">
+	    <cell>lorem</cell>
+	  </div>
+	</div>
+	<div>
+	  <div class="r w h">
+	    <cell>ipsum</cell>
+	  </div>
+	</div>
+      </div>
+      <div>
+	<cell>
+	  <div class="r w h">
+	    <cell>dolor</cell>
+	  </div>
+	</cell>
+	<cell>
+	  <div class="r w h">
+	    <cell>sit</cell>
+	  </div>
+	</cell>
       </div>
     </div>
   </div>
@@ -138,10 +154,10 @@
     <div class="c w h tc tm lf" style="border-spacing: 5px; empty-cells: hide">
       <div>
 	<div></div>
-	<div>lorem</div>
+	<cell>lorem</cell>
       </div>
       <div>
-	<div>ipsum</div>
+	<cell>ipsum</cell>
       </div>
     </div>
   </div>

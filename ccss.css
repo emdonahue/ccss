@@ -14,10 +14,15 @@
 .r > *{ display: table-cell;
 	vertical-align: inherit; }
 
-/* Table Layout */
-.lf { table-layout: fixed }
-.lc { border-collapse: collapsed }
-.lj > * + *{ padding-left: var(--justify-padding, 20px) }
+/* Padding */
+.psb > * { padding-left: calc(var(--s-b, 20px) / 2); /* Padding Space-Between */
+	  padding-right: calc(var(--s-b, 20px) / 2); }
+.psb > *:first-child { padding-left: 0 }
+.psb > *:last-child { padding-right: 0 }
+
+/* Justify */
+.jsb { display: flex;
+       justify-content: space-between; }
 
 /* Margins */
 .mc { margin-left: auto;
@@ -29,9 +34,12 @@
 .h { height: 100% }
 
 /* Text */
-.tt { vertical-align: top }
-.tm { vertical-align: middle }
-.tb { vertical-align: bottom }
+.tt { display: flex;
+      align-items: top; }
+.tm { display: flex;
+      align-items: center; }
+.tb { display: flex;
+      align-items: bottom; }
 .tl { text-align: left }
 .tc { text-align: center }
 .tr { text-align: right }
